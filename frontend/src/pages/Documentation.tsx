@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, BookOpen, CheckCircle2, FileText, GraduationCap, ShieldCheck } from "lucide-react";
+import { ArrowLeft, BookOpen, CheckCircle2, Download, FileText, GraduationCap, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { downloadProjectReport } from "@/lib/report";
 
 const sections = [
   ["01", "Introduction", "Problem statement, motivation, objectives, and scope of the SPPU TYBSc CS project."],
@@ -31,6 +33,8 @@ export default function Documentation() {
               <div className="mb-4 flex items-center justify-between"><Badge className="bg-emerald-100 text-emerald-800">TYBSc CS • SPPU</Badge><GraduationCap className="size-5 text-emerald-600" /></div>
               <p className="font-heading text-xl font-bold">DealScout</p>
               <p className="mt-2 text-sm text-slate-500">E-commerce product comparison and best-deal recommendation system</p>
+              <Button onClick={downloadProjectReport} className="mt-5 w-full bg-[#0f172a] text-white hover:bg-slate-800" data-testid="download-project-report-button"><Download className="size-4" /> Download project report</Button>
+              <p className="mt-2 text-xs leading-relaxed text-slate-400" data-testid="report-download-note">Word-compatible .doc file using Times New Roman, exact chapter order, title page, certificate, index, and diagram placeholders.</p>
             </CardContent>
           </Card>
         </section>
