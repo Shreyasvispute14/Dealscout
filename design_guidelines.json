@@ -1,0 +1,132 @@
+{
+  "project_info": {
+    "name": "SPPU TYBSc CS E-Commerce Deal & Price Aggregator",
+    "syllabus_context": "Savitribai Phule Pune University (SPPU) Third Year B.Sc. Computer Science Final Year Project. Designed with syllabus concepts (HTML5/CSS3/JavaScript frontend architecture, Python/SQLite backend concepts, JSON REST APIs, relational search data collection) wrapped in a modern React + Tailwind production UI.",
+    "theme_mode": "Light/Dark Dual Support with default Light Theme for clean academic evaluation and crisp product price comparison contrast."
+  },
+  "typography": {
+    "font_family_heading": "Cabinet Grotesk, Plus Jakarta Sans, sans-serif",
+    "font_family_body": "Outfit, system-ui, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "weights": {
+      "light": "300",
+      "regular": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700",
+      "black": "900"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-normal",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed font-normal",
+      "body_sm": "text-sm leading-normal",
+      "label": "text-xs font-mono uppercase tracking-[0.2em]"
+    },
+    "forbidden_fonts": ["Inter for headings", "Space Grotesk"]
+  },
+  "colors": {
+    "archetype": "Swiss High-Contrast + Deal Highlighting (Archetype 4)",
+    "primary_brand": {
+      "light": "#0F172A",
+      "dark": "#F8FAFC",
+      "description": "Deep Navy Slate anchor for trust, clarity, and structural authority."
+    },
+    "deal_best_accent": {
+      "light": "#16A34A",
+      "dark": "#22C55E",
+      "description": "Vivid Emerald Green reserved exclusively for Best Deal, Lowest Price Badge, and savings highlight."
+    },
+    "seller_badges": {
+      "amazon": "#EA580C",
+      "flipkart": "#2563EB",
+      "chroma": "#0891B2",
+      "reliance": "#DC2626"
+    },
+    "neutrals": {
+      "bg_light": "#F8FAFC",
+      "card_light": "#FFFFFF",
+      "border_light": "#E2E8F0",
+      "text_main_light": "#0F172A",
+      "text_muted_light": "#64748B",
+      "bg_dark": "#0B0F17",
+      "card_dark": "#161E2E",
+      "border_dark": "#26334D",
+      "text_main_dark": "#F1F5F9",
+      "text_muted_dark": "#94A3B8"
+    },
+    "forbidden_colors": ["#7351B7", "#1B93A4"]
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-2, p-4, p-6, p-8, p-12, p-16, p-20",
+    "grid_modes": {
+      "catalog_grid": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "comparison_matrix": "grid-cols-1 lg:grid-cols-12 gap-8",
+      "dashboard_data": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    },
+    "padding_rules": "All bordered cards must have internal padding (p-6 or p-8) to prevent text collision. Main layout uses max-w-7xl mx-auto px-4 sm:px-6 lg:px-8."
+  },
+  "components_and_structure": {
+    "navigation_bar": "Sticky header with backdrop blur (backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 z-50), featuring Logo, Live/Demo Mode Switcher, Search Input, Section Tabs (Compare, Data Collected, Academic Docs, Login/User Profile), and Theme Toggle.",
+    "hero_search_section": "Asymmetric search banner with prompt suggestions (e.g., 'MacBook Air M2', 'iPhone 15 128GB', 'Wireless Earbuds', 'Gaming Laptop') and toggle between Tech (Mobiles/Laptops) & General Products mode.",
+    "best_deal_banner": "High-impact recommendation engine widget highlighting the single best seller option with total savings calculation, seller delivery speed, and confidence score.",
+    "comparison_table": "Side-by-side spec and price matrix comparing Amazon, Flipkart, Croma, Reliance Digital, and local merchants with sortable columns, discount percentages, and affiliate demo links.",
+    "collected_data_view": "Admin/Syllabus analytics panel displaying stored search logs, query frequency, price variance charts, and SQLite backend schema simulation.",
+    "documentation_viewer": "Comprehensive Academic Project Section containing SPPU TYBSc CS Syllabus Mapping, Certificate Template, System Architecture Diagram, ER Model, Data Flow Diagram (DFD Level 0 & 1), SRS Guidelines, and Index."
+  },
+  "visual_enhancers": {
+    "card_style": "Flat subtle cards with 1px border (border-slate-200 dark:border-slate-800), rounded-xl, hover:border-emerald-500/50 hover:shadow-lg transition-all duration-200",
+    "deal_highlight": "Emerald glow or soft tint (bg-emerald-50 dark:bg-emerald-950/30 border-emerald-500)",
+    "live_vs_demo_badge": "Interactive status indicator showing whether live API search or SQLite demo dataset is active"
+  },
+  "motion_and_interactions": {
+    "framework": "framer-motion for tab switches, search reveal, modal overlays, and price drop badges",
+    "micro_interactions": "Smooth button click scaling (active:scale-95), hover lift on cards (-translate-y-0.5), and pulse animation on Best Deal highlight.",
+    "accessibility_motion": "Respects prefers-reduced-motion media query"
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_laptop_tech",
+        "url": "https://images.unsplash.com/photo-1635514874042-beb98fd8ea43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBsYXB0b3AlMjBzbWFydHBob25lJTIwdGVjaCUyMGVsZWN0cm9uaWNzfGVufDB8fHx8MTc5MTAzMzI1NHww&ixlib=rb-4.1.0&q=85",
+        "description": "Modern laptop sitting on top of a table for tech comparison header"
+      },
+      {
+        "category": "gadget_setup",
+        "url": "https://images.unsplash.com/photo-1426024084828-5da21e13f5dc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBsYXB0b3AlMjBzbWFydHBob25lJTIwdGVjaCUyMGVsZWN0cm9uaWNzfGVufDB8fHx8MTc5MTAzMzI1NHww&ixlib=rb-4.1.0&q=85",
+        "description": "MacBook Pro beside iPad and iPhone for mobile and laptop search grid"
+      },
+      {
+        "category": "ecommerce_deal",
+        "url": "https://images.unsplash.com/photo-1674027392857-9aed6e8ecab9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHw0fHxzaG9wcGluZyUyMG9ubGluZSUyMGVjb21tZXJjZSUyMGRlYWwlMjBkaXNjb3VudHxlbnwwfHx8fDE3OTEwMzMyNjF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Shopping basket, paper bag, target and chart icon for price deal analytics"
+      },
+      {
+        "category": "academic_student",
+        "url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwc3R1ZGVudCUyMHN0dWR5JTIwY29kaW5nJTIwY29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fHx8MTc5MTAzMzI1NHww&ixlib=rb-4.1.0&q=85",
+        "description": "SPPU Computer Science students working on web project for project documentation section"
+      }
+    ]
+  },
+  "testing_attributes": {
+    "rule": "Every button, link, search input, filter item, comparison cell, login form, and tab MUST include a descriptive data-testid attribute in kebab-case.",
+    "examples": [
+      "data-testid=\"search-input\"",
+      "data-testid=\"search-submit-button\"",
+      "data-testid=\"category-filter-mobiles\"",
+      "data-testid=\"comparison-table-row\"",
+      "data-testid=\"best-deal-card\"",
+      "data-testid=\"login-submit-button\"",
+      "data-testid=\"docs-download-certificate-button\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure .js files (JavaScript/JSX) are maintained properly without introducing breaking TypeScript mismatch.",
+    "Include a prominent 'Academic Documentation' drawer/tab with SPPU TYBSc CS Syllabus guidelines, Index, ER Diagram, Data Flow Diagram (DFD), and Certificate Generator.",
+    "Support both Demo SQLite catalog and Live integration mode toggling smoothly.",
+    "Highlight the Best Deal with distinct green styling, savings badge, and seller breakdown.",
+    "Make sure all interactive elements have explicit data-testid attributes."
+  ]
+}
