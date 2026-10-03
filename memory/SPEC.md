@@ -1,7 +1,7 @@
-# Smart Shopper living spec
+# DealScout living spec
 
 ## Purpose
-Smart Shopper is an SPPU TYBSc Computer Science project that lets a student search for a product, compare normalized offers from multiple sellers, and see the lowest listed price as the best deal.
+DealScout is an SPPU TYBSc Computer Science project that lets a student search for a product, compare normalized offers from multiple sellers, and see the lowest listed price as the best deal.
 
 ## Key flows
 - Visitor opens Compare, searches a mobile, laptop, or general product, and sees seller, price, rating, delivery, discount, and source.

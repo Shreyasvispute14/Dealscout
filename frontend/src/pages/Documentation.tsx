@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const sections = [
   ["01", "Introduction", "Problem statement, motivation, objectives, and scope of the SPPU TYBSc CS project."],
-  ["02", "Existing & Proposed System", "Manual price checking is slow. Smart Shopper collects normalized offers and recommends the lowest suitable deal."],
+  ["02", "Existing & Proposed System", "Manual price checking is slow. DealScout collects normalized offers and recommends the lowest suitable deal."],
   ["03", "Requirements", "HTML5, CSS3, JavaScript concepts, Python REST API concepts, MongoDB used as the project data store, and a modern browser."],
   ["04", "System Design", "Modules include login, product search, demo/live provider adapter, comparison engine, best-deal logic, and collected-data view."],
   ["05", "Implementation", "Product data is normalized into one offer structure so every seller can be compared using the same fields."],
@@ -29,7 +29,7 @@ export default function Documentation() {
           <Card className="border-slate-200 bg-white shadow-sm" data-testid="docs-project-card">
             <CardContent className="p-6">
               <div className="mb-4 flex items-center justify-between"><Badge className="bg-emerald-100 text-emerald-800">TYBSc CS • SPPU</Badge><GraduationCap className="size-5 text-emerald-600" /></div>
-              <p className="font-heading text-xl font-bold">Smart Shopper</p>
+              <p className="font-heading text-xl font-bold">DealScout</p>
               <p className="mt-2 text-sm text-slate-500">E-commerce product comparison and best-deal recommendation system</p>
             </CardContent>
           </Card>
@@ -48,7 +48,7 @@ export default function Documentation() {
             </Card>
             <Card className="border-slate-200 bg-[#0f172a] text-white" data-testid="docs-certificate-card">
               <CardHeader><CardTitle className="flex items-center gap-2"><FileText className="size-5 text-emerald-400" /> Certificate & declaration templates</CardTitle></CardHeader>
-              <CardContent className="space-y-4 p-6 text-sm leading-relaxed text-slate-300"><p>“This is to certify that __________________ has completed the project Smart Shopper under the guidance of __________________ during the academic year __________.”</p><p>Declaration: “I declare that this project is my original work prepared for the TYBSc Computer Science course.”</p><div className="flex items-center gap-2 border-t border-white/10 pt-4 text-emerald-300"><ShieldCheck className="size-4" /> Add signatures, seal, guide, and principal details as per your college format.</div></CardContent>
+              <CardContent className="space-y-4 p-6 text-sm leading-relaxed text-slate-300"><p>“This is to certify that __________________ has completed the project DealScout under the guidance of __________________ during the academic year __________.”</p><p>Declaration: “I declare that this project is my original work prepared for the TYBSc Computer Science course.”</p><div className="flex items-center gap-2 border-t border-white/10 pt-4 text-emerald-300"><ShieldCheck className="size-4" /> Add signatures, seal, guide, and principal details as per your college format.</div></CardContent>
             </Card>
           </div>
         </div>

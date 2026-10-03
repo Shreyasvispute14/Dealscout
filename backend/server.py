@@ -24,13 +24,13 @@ async def lifespan(app: FastAPI):
     client.close()
 
 
-app = FastAPI(title="SPPU Smart Shopper API", lifespan=lifespan)
+app = FastAPI(title="SPPU DealScout API", lifespan=lifespan)
 api_router = APIRouter(prefix="/api")
 
 
 @api_router.get("/")
 async def root():
-    return {"message": "SPPU Smart Shopper API", "ok": True}
+    return {"message": "SPPU DealScout API", "ok": True}
 
 
 api_router.include_router(auth_router, prefix="/auth", tags=["auth"])
