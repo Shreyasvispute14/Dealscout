@@ -1,0 +1,16 @@
+[
+  { "product_name": "Apple iPhone 15 128GB", "category": "Mobiles", "source": "Amazon", "seller": "Amazon Retail", "price": 69999, "original_price": 79900, "rating": 4.6, "delivery": "Tomorrow" },
+  { "product_name": "Apple iPhone 15 128GB", "category": "Mobiles", "source": "Flipkart", "seller": "Flipkart Seller", "price": 68499, "original_price": 79900, "rating": 4.5, "delivery": "2 days" },
+  { "product_name": "Apple iPhone 15 128GB", "category": "Mobiles", "source": "Croma", "seller": "Croma Retail", "price": 70990, "original_price": 79900, "rating": 4.4, "delivery": "3 days" },
+  { "product_name": "Samsung Galaxy S24 256GB", "category": "Mobiles", "source": "Amazon", "seller": "Amazon Retail", "price": 74999, "original_price": 79999, "rating": 4.5, "delivery": "Tomorrow" },
+  { "product_name": "Samsung Galaxy S24 256GB", "category": "Mobiles", "source": "Flipkart", "seller": "Flipkart Seller", "price": 72999, "original_price": 79999, "rating": 4.4, "delivery": "2 days" },
+  { "product_name": "MacBook Air M2 13-inch", "category": "Laptops", "source": "Amazon", "seller": "Amazon Retail", "price": 92990, "original_price": 99900, "rating": 4.8, "delivery": "Tomorrow" },
+  { "product_name": "MacBook Air M2 13-inch", "category": "Laptops", "source": "Croma", "seller": "Croma Retail", "price": 94990, "original_price": 99900, "rating": 4.7, "delivery": "3 days" },
+  { "product_name": "MacBook Air M2 13-inch", "category": "Laptops", "source": "Reliance Digital", "seller": "Reliance Retail", "price": 93990, "original_price": 99900, "rating": 4.6, "delivery": "4 days" },
+  { "product_name": "Dell Inspiron 15 Laptop", "category": "Laptops", "source": "Amazon", "seller": "Amazon Retail", "price": 54990, "original_price": 62990, "rating": 4.3, "delivery": "2 days" },
+  { "product_name": "Dell Inspiron 15 Laptop", "category": "Laptops", "source": "Flipkart", "seller": "Flipkart Seller", "price": 52990, "original_price": 62990, "rating": 4.2, "delivery": "3 days" },
+  { "product_name": "Noise Wireless Earbuds", "category": "General", "source": "Amazon", "seller": "Amazon Retail", "price": 1499, "original_price": 2499, "rating": 4.1, "delivery": "Tomorrow" },
+  { "product_name": "Noise Wireless Earbuds", "category": "General", "source": "Flipkart", "seller": "Flipkart Seller", "price": 1299, "original_price": 2499, "rating": 4.0, "delivery": "2 days" },
+  { "product_name": "College Laptop Backpack", "category": "General", "source": "Amazon", "seller": "Amazon Retail", "price": 1199, "original_price": 1899, "rating": 4.2, "delivery": "Tomorrow" },
+  { "product_name": "College Laptop Backpack", "category": "General", "source": "Local Store", "seller": "Campus Store", "price": 999, "original_price": 1499, "rating": 4.0, "delivery": "Pickup today" }
+]

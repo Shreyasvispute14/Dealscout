@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b172a" />
+    <meta name="description" content="Sign in to DealScout to review your comparison history and store activity." />
+    <title>Sign in · DealScout</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <main class="login-layout">
+      <section class="login-intro" data-testid="login-intro-panel">
+        <a href="/" class="brand brand-xl" data-testid="login-brand-link"><span class="brand-mark">D</span> dealscout</a>
+        <div style="max-width: 32rem">
+          <p class="eyebrow">Your private space</p>
+          <h1>Keep every comparison within reach.</h1>
+          <p class="lead">Sign in to review your search history, most-viewed products, and store activity from one clean dashboard.</p>
+          <div class="points">
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 11 2 2 4-4"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Review recent comparisons</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg> Understand your shopping patterns</span>
+            <span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg> Secure session-based access</span>
+          </div>
+        </div>
+        <p class="tagline">COMPARE CLEARLY · CHOOSE CONFIDENTLY</p>
+        <div class="ring ring-a"></div>
+      </section>
+
+      <section class="login-side">
+        <div class="login-box">
+          <a href="/" class="back-link" data-testid="login-back-link"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> Back to DealScout</a>
+          <div class="card login-card" data-testid="login-card">
+            <div class="card-header">
+              <div class="feature-icon" style="margin-bottom:0"><svg class="icon-lg icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
+              <h1>Welcome back</h1>
+              <p>Sign in to open your comparison insights.</p>
+            </div>
+            <div class="card-body">
+              <form id="login-form" class="login-form" data-testid="login-form">
+                <label class="field">Email<input id="login-email" class="input" type="email" value="preview@dealscout.local" aria-label="Email" required data-testid="login-email-input" /></label>
+                <label class="field">Password<input id="login-password" class="input" type="password" value="dealscout123" aria-label="Password" required data-testid="login-password-input" /></label>
+                <p id="login-error" class="form-error hidden" data-testid="login-error-message">The email or password is incorrect.</p>
+                <button type="submit" id="login-submit" class="btn btn-dark btn-full" data-testid="login-submit-button"><span id="login-submit-label">Sign in</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></button>
+              </form>
+              <div class="demo-box" data-testid="login-demo-credentials">Preview account<br /><strong>preview@dealscout.local</strong> · <strong>dealscout123</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

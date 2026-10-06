@@ -1,0 +1,9 @@
+[
+  {
+    "id": "preview-user-001",
+    "name": "DealScout User",
+    "email": "preview@dealscout.local",
+    "password": "dealscout123",
+    "role": "student"
+  }
+]

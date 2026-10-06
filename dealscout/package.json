@@ -1,0 +1,15 @@
+{
+  "name": "dealscout",
+  "version": "1.0.0",
+  "description": "DealScout - e-commerce product comparison and best-deal finder (HTML, CSS, JavaScript, Node.js)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT",
+  "private": true
+}
