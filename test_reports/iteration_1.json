@@ -1,0 +1,107 @@
+{
+  "iteration": 1,
+  "mode": "generate",
+  "passed": 13,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Product search and best-deal comparison",
+      "name": "test_tscheck_product_search_best_deal.py::test_macbook_air_search_returns_offers_and_best_deal",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/products/search?q=MacBook+Air&mode=demo -> 200; 3 offers (Amazon/Croma/Reliance Digital), best_deal_id matches min price (92990.0), all rows had seller/rating/delivery/source."
+    },
+    {
+      "criterion": "Product search and best-deal comparison (validation)",
+      "name": "test_tscheck_product_search_best_deal.py::test_search_rejects_too_short_query",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/products/search?q=M -> 422 string_too_short as expected."
+    },
+    {
+      "criterion": "Truthful live-mode fallback",
+      "name": "test_tscheck_live_mode_mock_label.py::test_live_mode_marks_results_as_mocked_preview",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/products/search?q=MacBook+Air&mode=live -> 200; live_provider_available=false, notice contains 'MOCKED', every offer had is_live=false, is_mocked=true."
+    },
+    {
+      "criterion": "Login and protected shopping insights",
+      "name": "test_tscheck_login_insights.py::test_login_succeeds_and_unlocks_analytics",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "POST /api/auth/login (preview@dealscout.local/dealscout123) -> 200 user.email matches; GET /api/analytics -> 200 with total_searches, unique_queries, recent_searches, source_counts present."
+    },
+    {
+      "criterion": "Login rejects invalid access (auth negative cases)",
+      "name": "test_tscheck_login_insights.py::test_analytics_rejects_unauthenticated_request / test_login_rejects_wrong_password",
+      "lane": "backend",
+      "status": "passed",
+      "evidence": "GET /api/analytics without session -> 401; POST /api/auth/login with wrong password -> 401."
+    },
+    {
+      "criterion": "Professional public homepage without academic or college-project wording",
+      "name": "homepage-professional-branding",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Title 'DealScout \u00b7 Compare smarter' confirmed; hero/brand visible; body text scanned for SPPU/TYBSc/Academic/project-demo wording, none found."
+    },
+    {
+      "criterion": "Brand metadata",
+      "name": "homepage-professional-branding",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Same check asserts document title and DealScout 'D' brand mark in header (brand-link)."
+    },
+    {
+      "criterion": "Product search and best-deal comparison (UI)",
+      "name": "search-macbook-air-shows-best-deal",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Searched 'MacBook Air' via form; best-deal-card and comparison-table rendered with >=1 offer rows and results-count text."
+    },
+    {
+      "criterion": "Correct popular-query behavior",
+      "name": "popular-query-uses-exact-term",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Typed unrelated text into search box, then clicked 'Wireless Earbuds' popular chip; results heading and search-input value both reflected 'Wireless Earbuds', not the typed text."
+    },
+    {
+      "criterion": "Login and protected shopping insights (UI)",
+      "name": "login-and-view-insights",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Logged in with preview@dealscout.local/dealscout123, user-profile appeared, Insights tab showed collected-data-panel with totals/unique-queries/recent-searches/source-counts cards."
+    },
+    {
+      "criterion": "Minimal resources page and downloadable files",
+      "name": "resources-page-downloads-work",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Docs page scanned for college wording (none found); all 4 download links (docx, pdf report, viva pdf, setup guide pdf) returned HTTP 200 via page.request.get."
+    },
+    {
+      "criterion": "Truthful live-mode fallback (UI)",
+      "name": "live-search-shows-preview-disclaimer",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Switched to Live search mode, searched MacBook Air; amber 'Preview prices' notice rendered and results-mode-badge read 'LIVE PREVIEW'."
+    },
+    {
+      "criterion": "Responsive core flow",
+      "name": "responsive-desktop-core-flow",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Run against public preview URL at 1440x900: header/hero/search panel visible, search produced comparison table, login/back navigation and Resources page all reachable without overlay issues."
+    }
+  ],
+  "notes": [
+    "Matrix had 8 acceptance criteria; covered with 6 backend test functions across 3 files and 6 named browser checks (one criterion, brand metadata, verified within the homepage check rather than a duplicate artifact).",
+    "/downloads/* files are served by the Vite frontend's public folder (not the FastAPI backend on :8001, which 404s on those paths) -- confirmed working via :3000 and the public preview URL, so no bug.",
+    "spec_deviations from briefing (no SERPAPI_KEY -> mocked live preview; registration/add-record out of scope) matched observed behavior."
+  ]
+}

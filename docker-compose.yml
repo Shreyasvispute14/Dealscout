@@ -1,0 +1,28 @@
+services:
+  mongodb:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - dealscout_data:/data/db
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      MONGO_URL: mongodb://mongodb:27017
+      DB_NAME: dealscout
+      CORS_ORIGINS: "*"
+      SERPAPI_KEY: ${SERPAPI_KEY:-}
+    depends_on:
+      - mongodb
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  dealscout_data:

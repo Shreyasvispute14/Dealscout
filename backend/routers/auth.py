@@ -6,8 +6,8 @@ from models.auth import LoginRequest, LoginResponse, User
 
 router = APIRouter()
 
-DEMO_USER = User(id="student-demo-001", name="SPPU Student", email="student@sppu-project.local")
-DEMO_PASSWORD = "demo123"
+DEMO_USER = User(id="preview-user-001", name="DealScout User", email="preview@dealscout.local")
+DEMO_PASSWORD = "dealscout123"
 SESSION_COOKIE = "sppudeal_session"
 sessions: dict[str, User] = {}
 

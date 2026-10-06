@@ -1,5 +1,7 @@
 # farm-ts
 
+> **DealScout quick start:** with Docker Desktop running, double-click `setup.bat` on Windows or run `chmod +x setup.sh && ./setup.sh` on macOS/Linux. Open `http://localhost:3000`. Full instructions are in `SETUP_GUIDE.md`.
+
 Minimal split backend/frontend starter: **FastAPI + MongoDB** behind a
 **Vite + React 19 + TypeScript** frontend, joined by a small typed fetch layer
 over `/api`. This is a bare skeleton — no app features are implemented. Build on
