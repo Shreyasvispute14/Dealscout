@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "16b02fa8-fea4-48e3-ace7-ac213e891cb0",
+    "query": "iPhone 15",
+    "category": "All",
+    "mode": "demo",
+    "result_count": 3,
+    "best_price": 68499,
+    "searched_at": "2026-10-06T19:58:28.612Z",
+    "sources": [
+      "Amazon",
+      "Flipkart",
+      "Croma"
+    ]
+  }
+]
